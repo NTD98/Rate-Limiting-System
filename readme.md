@@ -1,7 +1,7 @@
 # Global Rate Limiting
 
 A distributed global rate limiting system implemented using Spring Boot and Redis. This project demonstrates a hierarchical rate limiting architecture involving client-side sidecars, zone aggregators, and a global controller.
-
+![img_1.png](img_1.png)
 > **Note**: In a production environment, each of the components below would typically be deployed as a standalone service or sidecar container. They are co-located in this single project for simplicity and demonstration purposes.
 
 ## Architecture
@@ -32,6 +32,7 @@ The system consists of four main components:
     -   Computes safe limits based on historical peaks and buffer headroom.
     -   Updates the Global Rate Limiter with the new limits.
 
+![img.png](img.png)
 ## Prerequisites
 
 -   Java 17
